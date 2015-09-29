@@ -18,12 +18,12 @@ class Module extends \yii\base\Module
     /**
      *
      */
-    const VERSION = '0.0.2-dev';
+    const VERSION = '1.0-dev';
 
     /**
      * @var string
      */
-    public $controllerNamespace = 'bajadev\utility\migration\controllers';
+    public $controllerNamespace = 'boliver20\utility\migration\controllers';
 
 
     /**
@@ -32,7 +32,7 @@ class Module extends \yii\base\Module
     public function init()
     {
 
-        $path = '@vendor/bajadev/yii2-migration-utility/assets/c006-migration.js';
+        $path = '@vendor/boliver20/yii2-migration-utility/assets/c006-migration.js';
         \Yii::$app->assetManager->publish($path);
 		
         parent::init();

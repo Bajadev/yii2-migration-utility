@@ -5,7 +5,7 @@
  * Date: 6/7/14
  * Time: 7:24 PM
  */
-namespace bajadev\utility\migration;
+namespace boliver20\utility\migration;
 
 /**
  * Class Module

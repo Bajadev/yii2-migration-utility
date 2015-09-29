@@ -1,13 +1,13 @@
 <?php
 
-namespace bajadev\utility\migration\assets;
+namespace boliver20\utility\migration\assets;
 
 use yii\web\AssetBundle;
 use yii\web\View;
 
 /**
  * Class AppAssets
- * @package bajadev\utility\migration\assets
+ * @package boliver20\utility\migration\assets
  * @author Bajadev <info@bajadev.hu>
  * @link http://bajadev.hu
  */

@@ -1,12 +1,12 @@
 <?php
 
-namespace bajadev\utility\migration\models;
+namespace boliver20\utility\migration\models;
 
 use yii\base\Model;
 
 /**
  * Class MigrationUtility
- * @package bajadev\utility\migration\models
+ * @package boliver20\utility\migration\models
  * @author Bajadev <info@bajadev.hu>
  * @link http://bajadev.hu
  */

@@ -1,14 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: user
- * Date: 7/20/14
- * Time: 8:28 PM
- */
-namespace c006\utility\migration\assets;
+
+namespace bajadev\utility\migration\assets;
 
 use Yii;
 
+/**+
+ * Class AppUtility
+ * @package bajadev\utility\migration\assets
+ * @author Bajadev <info@bajadev.hu>
+ * @link http://bajadev.hu
+ */
 class AppUtility
 {
 

@@ -1,19 +1,18 @@
 <?php
-namespace c006\utility\migration\controllers;
+namespace bajadev\utility\migration\controllers;
 
-use c006\utility\migration\assets\AppAssets;
-use c006\utility\migration\assets\AppUtility;
-use c006\utility\migration\models\MigrationUtility;
+use bajadev\utility\migration\assets\AppAssets;
+use bajadev\utility\migration\assets\AppUtility;
+use bajadev\utility\migration\models\MigrationUtility;
 use Yii;
 use yii\base\Object;
 use yii\web\Controller;
 
 /**
  * Class DefaultController
- *
- * @author  Jon Chambers <c006@users.noreply.github.com>
- *
- * @package c006\utility\migration\controllers
+ * @package bajadev\utility\migration\controllers
+ * @author Bajadev <info@bajadev.hu>
+ * @link http://bajadev.hu
  */
 class DefaultController extends Controller
 {
@@ -110,9 +109,9 @@ class DefaultController extends Controller
                                     $link_column = $v;
                                     $str = '$this->addForeignKey(';
                                     $str .= '\'fk_' . $link_table . '_' . explode('.', microtime('usec'))[1] . '_' . substr("000" . sizeof($array['fk']), 2) . "',";
-                                    $str .= '\'{{%' . $table . '}}\', ';
+                                    $str .= '\'' . $table . '\', ';
                                     $str .= '\'' . $link_to_column . '\', ';
-                                    $str .= '\'{{%' . $link_table . '}}\', ';
+                                    $str .= '\'' . $link_table . '\', ';
                                     $str .= '\'' . $link_column . '\', ';
                                     $str .= '\'' . $foreignKeyOnDelete . '\', ';
                                     $str .= '\'' . $foreignKeyOnUpdate . '\' ';
@@ -153,7 +152,7 @@ class DefaultController extends Controller
                 if ($addTableInserts) {
                     $data = Yii::$app->db->createCommand('SELECT * FROM `' . $table . '`')->queryAll();
                     foreach ($data as $row) {
-                        $out = '$this->insert(\'{{%' . $table . '}}\',[';
+                        $out = '$this->insert(\'' . $table . '\',[';
                         foreach ($columns->columns as $column) {
                             $out .= "'" . $column->name . "'=>'" . addslashes($row[ $column->name ]) . "',";
                         }
@@ -228,6 +227,13 @@ class DefaultController extends Controller
         );
     }
 
+    /**
+     * @return \string[]
+     */
+    public function getTables()
+    {
+        return \Yii::$app->db->getSchema()->getTableNames('', true);
+    }
 
     protected function mysql_direct($table)
     {
@@ -262,22 +268,13 @@ class DefaultController extends Controller
 
     }
 
-    /**
-     * @return \string[]
-     */
-    public function getTables()
-    {
-        return \Yii::$app->db->getSchema()->getTableNames('', TRUE);
-    }
-
 }
 
 /**
  * Class OutputString
- *
- * @author  Nils Lindentals <nils@dfworks.lv>
- *
- * @package c006\utility\migration\controllers
+ * @package bajadev\utility\migration\controllers
+ * @author Bajadev <info@bajadev.hu>
+ * @link http://bajadev.hu
  */
 class OutputString extends Object
 {

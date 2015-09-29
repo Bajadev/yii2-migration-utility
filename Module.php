@@ -5,7 +5,7 @@
  * Date: 6/7/14
  * Time: 7:24 PM
  */
-namespace c006\utility\migration;
+namespace bajadev\utility\migration;
 
 /**
  * Class Module
@@ -23,7 +23,7 @@ class Module extends \yii\base\Module
     /**
      * @var string
      */
-    public $controllerNamespace = 'c006\utility\migration\controllers';
+    public $controllerNamespace = 'bajadev\utility\migration\controllers';
 
 
     /**
@@ -31,6 +31,10 @@ class Module extends \yii\base\Module
      */
     public function init()
     {
+
+        $path = '@vendor/bajadev/yii2-migration-utility/assets/c006-migration.js';
+        \Yii::$app->assetManager->publish($path);
+		
         parent::init();
     }
 

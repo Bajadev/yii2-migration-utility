@@ -1,19 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: user
- * Date: 5/24/14
- * Time: 11:47 AM
- */
-namespace c006\utility\migration\assets;
+
+namespace bajadev\utility\migration\assets;
 
 use yii\web\AssetBundle;
 use yii\web\View;
 
 /**
  * Class AppAssets
- *
- * @package c006\utility\migration\assets
+ * @package bajadev\utility\migration\assets
+ * @author Bajadev <info@bajadev.hu>
+ * @link http://bajadev.hu
  */
 class AppAssets extends AssetBundle
 {

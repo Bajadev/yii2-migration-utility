@@ -1,13 +1,14 @@
 <?php
 
-namespace c006\utility\migration\models;
+namespace bajadev\utility\migration\models;
 
 use yii\base\Model;
 
 /**
  * Class MigrationUtility
- *
- * @package c006\utility\migration\models
+ * @package bajadev\utility\migration\models
+ * @author Bajadev <info@bajadev.hu>
+ * @link http://bajadev.hu
  */
 class MigrationUtility extends Model
 {

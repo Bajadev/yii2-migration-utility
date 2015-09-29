@@ -17,7 +17,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "bajadev\\utility\\migration\\": ""
+      "boliver20\\utility\\migration\\": ""
     }
   }
 }

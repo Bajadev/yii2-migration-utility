@@ -1,12 +1,12 @@
 <?php
 
-namespace boliver20\utility\migration\assets;
+namespace bajadev\utility\migration\assets;
 
 use Yii;
 
 /**+
  * Class AppUtility
- * @package boliver20\utility\migration\assets
+ * @package bajadev\utility\migration\assets
  * @author Bajadev <info@bajadev.hu>
  * @link http://bajadev.hu
  */

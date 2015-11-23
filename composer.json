@@ -1,5 +1,5 @@
 {
-  "name": "boliver20/yii2-migration-utility",
+  "name": "bajadev/yii2-migration-utility",
   "description": "Automatically writes the create tables for migrations or create tables in general",
   "type": "yii2-extension",
   "keywords": [
@@ -11,13 +11,13 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "B. Oliver",
+      "name": "Bajadev",
       "email": "info@bajadev.hu"
     }
   ],
   "autoload": {
     "psr-4": {
-      "boliver20\\utility\\migration\\": ""
+      "bajadev\\utility\\migration\\": ""
     }
   }
 }

@@ -1,16 +1,16 @@
 <?php
-namespace boliver20\utility\migration\controllers;
+namespace bajadev\utility\migration\controllers;
 
-use boliver20\utility\migration\assets\AppAssets;
-use boliver20\utility\migration\assets\AppUtility;
-use boliver20\utility\migration\models\MigrationUtility;
+use bajadev\utility\migration\assets\AppAssets;
+use bajadev\utility\migration\assets\AppUtility;
+use bajadev\utility\migration\models\MigrationUtility;
 use Yii;
 use yii\base\Object;
 use yii\web\Controller;
 
 /**
  * Class DefaultController
- * @package boliver20\utility\migration\controllers
+ * @package bajadev\utility\migration\controllers
  * @author Bajadev <info@bajadev.hu>
  * @link http://bajadev.hu
  */
